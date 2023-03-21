@@ -12,12 +12,12 @@ public class Boat implements WaterVehicle{
 
     @java.lang.Override
     public String getVehicleName() {
-        return null;
+        return name;
     }
 
     @java.lang.Override
     public int getVehicleCapacity() {
-        return 0;
+        return capacity;
     }
 
     public String getName() {

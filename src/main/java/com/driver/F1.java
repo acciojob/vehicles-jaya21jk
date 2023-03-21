@@ -24,7 +24,7 @@ public class F1 extends Car {
         if(newSpeed == 0) {
             //Stop the car, set gear as 1
             stop();
-            super.changeGear(1);
+            changeGear(1);
         }
         else if(newSpeed <= 50) changeGear(1);
         else if(newSpeed <= 100) changeGear(2);
@@ -39,13 +39,4 @@ public class F1 extends Car {
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }
-
-//    public int getCurrentDirection(){
-//        if(currSpeed > 0 && currSpeed <= 50) return 1;
-//        else if(currSpeed >= 51 && currSpeed <= 100) return 2;
-//        else if(currSpeed >= 101 && currSpeed <= 150) return 3;
-//        else if(currSpeed >= 151 && currSpeed <= 200) return 4;
-//        else if(currSpeed >= 201 && currSpeed <= 250) return 5;
-//        return 6;
-//    }
 }
